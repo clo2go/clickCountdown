@@ -9,6 +9,19 @@ var config = {
 };
 firebase.initializeApp(config);
 
+var count = 100;
+
 firebase.database().ref().on("value",function(snapshot){
 	$('#clickValue').html(snapshot.val().clicks);
+	count = snapshot.val().clicks;
+	$('#clickValue').html(count);
 })
+
+$("#clickButton").on("click", function() {
+	count --;
+	firebase.database().ref().set({
+		clicks:count
+	})
+})
+
+
