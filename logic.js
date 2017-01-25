@@ -24,4 +24,10 @@ $("#clickButton").on("click", function() {
 	})
 })
 
+$("#restartButton").on("click", function() {
+	firebase.database().ref().set({
+		clicks:100
+	});
+
+})
 
