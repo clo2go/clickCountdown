@@ -11,20 +11,23 @@
 </head>
 <body>
 
-<div class="jumbotron jumbotron-fluid text-center">
-  <div class="container">
+<div class="container-fluid">
+  <div class="jumbotron jumbotron-fluid text-center">
     <h1 class="display-3">Firebase Practice</h1>
     <p class="lead">This is a click counter made using Firebase database.</p>
   </div>
-  <div text-center>
-  	<h1>Only <span id="clickValue"></span> clicks to go!!</h1>
-    <button id ="clickButton">CLICK ME!!</button>
-	<button id ="restartButton">Restart</button>
-  </div>
-  	
-  </div>			
-</div>
+<hr class="my-4">		
 
+  <div class="card text-center">
+    <h3 class="card-header">Get your clicker fingers ready!!</h3>
+      <div class="card-block">
+          <h4 class="card-title">Start Clicking Here!!</h4>
+            <a href="#" class="btn btn-primary" id="clickButton">Click Here!!</a>
+              <h1>Only <span id="clickValue"></span> clicks to go!!</h1>
+            <a href="#" class="btn btn-primary" id="restartButton">Start Over!!</a>
+      </div>
+  </div>
+<hr class="my-4">   
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
